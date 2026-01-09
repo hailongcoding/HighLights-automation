@@ -90,7 +90,6 @@
     let yesClicked = false;
     let cancelClicked = false;
     let exitClicked = false;
-    let dailyPopupClosed = false;
     let currentItemType = null;
 
     /* ===============================
@@ -299,7 +298,6 @@
        OBSERVER
     =============================== */
     const observer = new MutationObserver(() => {
-        closeDailyPopup();
         autoClickBook();
         dragSliderToEnd();
         clickNextButton();    // This now does rapid clicking
